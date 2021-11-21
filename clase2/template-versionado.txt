@@ -1,0 +1,12 @@
+/**
+ * @challenge: Crear un algoritmo JS simple
+ * 
+ * @version: 1.0.1
+ * @author: Lucas Ledesma.
+ * @fecha: 16/11/2021
+ *
+ * History:
+ *  - v1.0.1 – Primera entrega
+ */
+
+// Código de aquí en adelante
