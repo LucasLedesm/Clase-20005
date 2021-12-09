@@ -22,7 +22,7 @@ do {
         var nombreCliente = prompt("Ingrese su nombre");
         var apellidoCliente = prompt("Ingrese su apellido");
         var edadCliente = parseInt(prompt("ingrese su edad"));
-        arrayVacunas.push(new Vacunas(vacunaCliente, nombreCliente, apellidoCliente, edadCliente));
+        arrayVacunas.push(new Vacunas(nombreCliente, apellidoCliente, edadCliente, vacunaCliente));
     }
 
 } while (comprobacion != "fin" || comprobacion != "Fin" || comprobacion != "FIN")

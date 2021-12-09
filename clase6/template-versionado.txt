@@ -1,9 +1,8 @@
 /**
- * @challenge: Crear un algoritmo utilizando un ciclo
- * 
- * @version: 1.0.5
+ * @challenge: 
+ * @version: 1.0.6
  * @author: Lucas Ledesma.
- * @fecha: 05/12/2021
+ * @fecha: 09/12/2021
  *
  * History:
  *  - v1.0.1 – Primera entrega
@@ -11,6 +10,7 @@
  *  - v1.0.3 – Tercer entrega
  *  - v1.0.4 – Cuarta entrega
  *  - v1.0.5 – Quinta entrega
+ *  - v1.0.5 – Sexta entrega
 
  */
 
