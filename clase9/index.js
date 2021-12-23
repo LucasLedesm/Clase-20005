@@ -39,3 +39,4 @@ const clearList = () => {
     hijo.remove()
     Pacient.pop();
 };
+console.log(document.getElementById("formulario").value);
