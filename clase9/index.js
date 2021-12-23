@@ -20,17 +20,17 @@ const addNewPacient = () => {
         alert("Solo para mayores de edad")
         newPacient.innerHTML =
             `<th scope="row" >1</th>
-    <td style = background-color:"red">${pacientName} ${pacientLastName}</td>
+    <td>${pacientName} ${pacientLastName}</td>
     <td>${pacientVacuna}</td>
-    <td>${pacientDosis}°</td>`;
+    <td style="background-color: red"><b>NO SE PUEDE VACUNAR</b></td>`;
     }
    else if (pacientTemp >= 37.2) {
         alert("no te podes vacunar con fiebre, porfavor hacete ver")
         newPacient.innerHTML =
             `<th scope="row" >1</th>
-        <td style = background-color:"red">${pacientName} ${pacientLastName}</td>
+        <td>${pacientName} ${pacientLastName}</td>
         <td>${pacientVacuna}</td>
-        <td>${pacientDosis}°</td>`;
+        <td style="background-color: red"><b>NO SE PUEDE VACUNAR</b></td>`;
     }
     console.log(Pacient)
 };
@@ -39,4 +39,3 @@ const clearList = () => {
     hijo.remove()
     Pacient.pop();
 };
-console.log(document.getElementById("formulario").value);
