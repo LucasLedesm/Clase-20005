@@ -7,10 +7,10 @@ const addNewPacient = () => {
     let pacientEdad = document.getElementById("inputEdad").value;
     let pacientTemp = document.getElementById("inputTemp").value;
     let newPacient = document.createElement("tr");
-    
+
     newPacient.id = 'clienteHijos';
     newPacient.innerHTML =
-        `<th scope="row" > 1</th>
+        `
     <td>${pacientName} ${pacientLastName}</td>
     <td>${pacientVacuna}</td>
     <td>${pacientDosis}°</td>`;
@@ -19,15 +19,16 @@ const addNewPacient = () => {
     if (pacientEdad < 18) {
         alert("Solo para mayores de edad")
         newPacient.innerHTML =
-            `<th scope="row" >1</th>
+            `
     <td>${pacientName} ${pacientLastName}</td>
     <td>${pacientVacuna}</td>
-    <td style="background-color: red"><b>NO SE PUEDE VACUNAR</b></td>`;
+    <td style="background-color: red"><b>NO SE PUEDE VACUNAR</b></td>
+    `;
     }
-   else if (pacientTemp >= 37.2) {
+    else if (pacientTemp >= 37.2) {
         alert("no te podes vacunar con fiebre, porfavor hacete ver")
         newPacient.innerHTML =
-            `<th scope="row" >1</th>
+            `
         <td>${pacientName} ${pacientLastName}</td>
         <td>${pacientVacuna}</td>
         <td style="background-color: red"><b>NO SE PUEDE VACUNAR</b></td>`;
@@ -37,5 +38,5 @@ const addNewPacient = () => {
 const clearList = () => {
     let hijo = document.getElementById("clienteHijos");
     hijo.remove()
-    Pacient.pop();
+    
 };
