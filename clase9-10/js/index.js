@@ -15,7 +15,6 @@ const addNewPacient = () => {
     <td>${pacientVacuna}</td>
     <td>${pacientDosis}°</td>`;
     getPacientList.appendChild(newPacient);
-
     if (pacientEdad < 18) {
         alert("Solo para mayores de edad")
         newPacient.innerHTML =
@@ -33,10 +32,18 @@ const addNewPacient = () => {
         <td>${pacientVacuna}</td>
         <td style="background-color: red"><b>NO SE PUEDE VACUNAR</b></td>`;
     }
-    console.log(Pacient)
+    function pacientData(name, lastname, vacuna, dosis) {
+        this.name = pacientName;
+        this.lastname = pacientLastName;
+        this.vacuna = pacientVacuna;
+        this.dosis = pacientDosis;
+    }
+    const pacientes = new pacientData ({nombre: pacientName, apellido: pacientLastName, vacuna: pacientVacuna, dosis: pacientDosis})
+    let pacientDataJson = JSON.stringify(pacientes);
+    localStorage.setItem("Pacientes", pacientDataJson);
 };
 const clearList = () => {
     let hijo = document.getElementById("clienteHijos");
     hijo.remove()
-    
+
 };
