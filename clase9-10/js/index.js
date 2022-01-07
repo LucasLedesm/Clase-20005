@@ -1,3 +1,4 @@
+const pacientes = [] //necesario que exista fuera de la funcion!
 const addNewPacient = () => {
     let getPacientList = document.getElementById("Pacient");
     let pacientName = document.getElementById("inputName").value;
@@ -7,7 +8,6 @@ const addNewPacient = () => {
     let pacientEdad = document.getElementById("inputEdad").value;
     let pacientTemp = document.getElementById("inputTemp").value;
     let newPacient = document.createElement("tr");
-
     newPacient.id = 'clienteHijos';
     newPacient.innerHTML =
         `
@@ -38,12 +38,14 @@ const addNewPacient = () => {
         this.vacuna = pacientVacuna;
         this.dosis = pacientDosis;
     }
-    const pacientes = new pacientData ({nombre: pacientName, apellido: pacientLastName, vacuna: pacientVacuna, dosis: pacientDosis})
+    pacientes.push(new pacientData({ nombre: pacientName, apellido: pacientLastName, vacuna: pacientVacuna, dosis: pacientDosis }))
+    actualizoStorange();
+};
+let actualizoStorange = ()=>{ //esto lo pongo como funcion aparte porque me parece que mas logico. Por si queres despues borrar un solo paciente podes borrar y actualizar el storange sin ese paciente
     let pacientDataJson = JSON.stringify(pacientes);
     localStorage.setItem("Pacientes", pacientDataJson);
-};
+}
 const clearList = () => {
     let hijo = document.getElementById("clienteHijos");
     hijo.remove()
-
 };
