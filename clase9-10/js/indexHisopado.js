@@ -1,3 +1,4 @@
+const pacientesHisopados = []
 const addNewPacientHisopado = () => {
     let getPacientListH = document.getElementById("PacientHisopado");
     let pacientNameH = document.getElementById("inputNameHisopado").value;
@@ -8,13 +9,25 @@ const addNewPacientHisopado = () => {
 
     newPacientHisopado.id = 'clienteHijosH';
     newPacientHisopado.innerHTML =
-    `<td>${pacientNameH} ${pacientLastNameH}</td>
+        `<td>${pacientNameH} ${pacientLastNameH}</td>
      <th scope="col"></th>
      <td>${sintoma1}, ${sintoma2}</td>`;
     getPacientListH.appendChild(newPacientHisopado);
 
+    function pacientDataH(name, lastname, sintoma, sintomatwo) {
+        this.name = pacientNameH;
+        this.lastname = pacientLastNameH;
+        this.sintoma = sintoma1;
+        this.sintomatwo = sintoma2;
+    }
+    pacientesHisopados.push(new pacientDataH({ nombre: pacientNameH, apellido: pacientLastNameH, sintoma: sintoma1, sintomatwo: sintoma2 }))
+    actualizoStorange();
 };
-const clearListHisopado = () => {
-    let hijoH = document.getElementById("clienteHijosH");
-    hijoH.remove()
+let actualizoStorange = () => {
+    let pacientDataHJson = JSON.stringify(pacientesHisopados);
+    localStorage.setItem("Pacientes hisopados", pacientDataHJson);
+}
+const clearList = () => {
+    let hijo = document.getElementById("clienteHijos");
+    hijo.remove()
 };

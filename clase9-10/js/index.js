@@ -1,4 +1,5 @@
-const pacientes = [] //necesario que exista fuera de la funcion!
+
+const pacientes = []
 const addNewPacient = () => {
     let getPacientList = document.getElementById("Pacient");
     let pacientName = document.getElementById("inputName").value;
@@ -41,7 +42,7 @@ const addNewPacient = () => {
     pacientes.push(new pacientData({ nombre: pacientName, apellido: pacientLastName, vacuna: pacientVacuna, dosis: pacientDosis }))
     actualizoStorange();
 };
-let actualizoStorange = ()=>{ //esto lo pongo como funcion aparte porque me parece que mas logico. Por si queres despues borrar un solo paciente podes borrar y actualizar el storange sin ese paciente
+let actualizoStorange = ()=>{
     let pacientDataJson = JSON.stringify(pacientes);
     localStorage.setItem("Pacientes", pacientDataJson);
 }
@@ -49,3 +50,13 @@ const clearList = () => {
     let hijo = document.getElementById("clienteHijos");
     hijo.remove()
 };
+
+// EVENTOS JQUERY
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+html {
+  background: url(../resources/img/background.jpg) no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+label, legend {
+  color: aquamarine !important;
+}
+
+#formulario {
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+table {
+  background: aquamarine;
+}
+
+#Pacient {
+  background-color: aquamarine !important;
+}
+
+#Pacient .white {
+  background-color: white !important;
+}
+/*# sourceMappingURL=main.css.map */
