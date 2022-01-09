@@ -51,9 +51,10 @@ const clearList = () => {
     hijo.remove()
 };
 
-// EVENTOS JQUERY
-
-
+//EVENTOS JQUERY
+$("#myBtn").click(function(event) {
+    $("#check").show();
+})
 
 
 

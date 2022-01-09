@@ -27,7 +27,7 @@ let actualizoStorange = () => {
     let pacientDataHJson = JSON.stringify(pacientesHisopados);
     localStorage.setItem("Pacientes hisopados", pacientDataHJson);
 }
-const clearList = () => {
-    let hijo = document.getElementById("clienteHijos");
-    hijo.remove()
+const clearListHisopado = () => {
+    let hijoH = document.getElementById("clienteHijosH");
+    hijoH.remove()
 };

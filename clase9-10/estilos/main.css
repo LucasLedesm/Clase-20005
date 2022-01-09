@@ -16,14 +16,11 @@ label, legend {
 }
 
 table {
-  background: aquamarine;
+  background: rgba(255, 255, 255, 0.425);
 }
 
-#Pacient {
-  background-color: aquamarine !important;
-}
-
-#Pacient .white {
-  background-color: white !important;
+.color {
+  background: black !important;
+  color: white !important;
 }
 /*# sourceMappingURL=main.css.map */
