@@ -51,11 +51,18 @@ const clearList = () => {
     hijo.remove()
 };
 
-//EVENTOS JQUERY
-$("#myBtn").click(function(event) {
-    $("#check").show();
+//EVENTOS JQUERY 
+$("img").on("mouseenter mouseleave", function(event) {
+    $("img").fadeToggle("slow");
 })
 
+$("#clear").click(function(event) {
+    alert("Borraste un paciente");
+})
+
+$("#myBtn").click(function(event) {
+    alert("Ingresaste un paciente");
+})
 
 
 
