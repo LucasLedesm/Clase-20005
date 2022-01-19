@@ -1,0 +1,10 @@
+[
+    {"name":"nicolas","lastName":"sanches","dosis":1,"vacuna":"sputnick"},
+    {"name":"lucas","lastName":"gonzalez","dosis":2,"vacuna":"sputnick"},
+    {"name":"tomas","lastName":"garcia","dosis":1,"vacuna":"sputnick"},
+    {"name":"lautaro","lastName":"perez","dosis":3,"vacuna":"sputnick"},
+    {"name":"ariel","lastName":"fernandez", "dosis":4,"vacuna":"sputnick"}
+]
+
+    
+  

@@ -52,19 +52,21 @@ const clearList = () => {
 };
 
 //EVENTOS JQUERY 
-$("img").on("mouseenter mouseleave", function(event) {
-    $("img").fadeToggle("slow");
-})
+// $("img").on("mouseenter mouseleave", function(event) {
+//     $("img").fadeToggle("slow");
+// })
 
-$("#clear").click(function(event) {
-    alert("Borraste un paciente");
-})
+// $("#clear").click(function(event) {
+//     alert("Borraste un paciente");
+// })
 
-$("#myBtn").click(function(event) {
-    alert("Ingresaste un paciente");
-})
+// $("#myBtn").click(function(event) {
+//     alert("Ingresaste un paciente");
+// })
 
-
+fetch('./pacientes.json')
+  .then(response => response.json())
+  .then(data => console.log(data));
 
 
 
