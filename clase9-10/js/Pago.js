@@ -32,7 +32,14 @@ async function pagar() {
           items: productsToMP,
         }),
       }
-    );
+    ).then(response=> {
+      if(response.status == 201 || response.status == 200 ){
+       
+         $("#myBtnHisopado").show();
+      }
+    })
+
+
     console.warn(response)
     const data = await response.json();
     console.log(data)

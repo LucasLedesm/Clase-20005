@@ -23,4 +23,8 @@ table {
   background: black !important;
   color: white !important;
 }
+
+#myBtnHisopado {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
