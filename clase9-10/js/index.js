@@ -64,9 +64,8 @@ const clearList = () => {
 //     alert("Ingresaste un paciente");
 // })
 
-fetch('./pacientes.json')
-  .then(response => response.json())
-  .then(data => console.log(data));
-
+// fetch('./pacientes.json')
+//   .then(response => response.json())
+//   .then(data => console.log(data));
 
 

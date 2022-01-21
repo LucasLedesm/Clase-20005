@@ -32,4 +32,24 @@ let fecha = hoy.getDate() + '-' + (hoy.getMonth() + 1) + '-' + hoy.getFullYear()
 let hora = hoy.getHours() + ':' + hoy.getMinutes() + ':' + hoy.getSeconds();
 let fechaYHora = fecha + ' ' + hora;
 
+let url = "./Pacientes.json"
+$.get(url,function(response, status){
+    console.log(response)
+    console.log(status);
+    let html= ""; 
+    if (status === "success"){
+        for(const dato of response){
+
+            html +=
+             `<ul> <li>Nombre:${dato.name}</li>
+             <li>Apellido: ${dato.lastName}</li>
+             <li>Dosis: ${dato.dosis}</li>
+             <li>Vacuna: ${dato.vacuna}</li>
+              </ul>
+              <br> `
+        
+        }
+        $("#app").html(html);
+    }
+})
 
