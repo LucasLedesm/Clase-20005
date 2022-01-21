@@ -1,0 +1,25 @@
+[
+    {"name":"nicolas","lastName":"sanches","sintoma":"fiebre","sintomatwo":"Dolor de cabeza"},
+    {"name":"lucas","lastName":"gonzalez","sintoma":"fiebre","sintomatwo":"Dolor de cabeza"},
+    {"name":"tomas","lastName":"garcia","sintoma":"fiebre","sintomatwo":"Nauseas"},
+    {"name":"lautaro","lastName":"perez","sintoma":"fiebre","sintomatwo":"Dolor de cabeza"},
+    {"name":"ariel","lastName":"fernandez", "sintoma":"fiebre","sintomatwo":"fiebre"},
+    {"name":"nicolas","lastName":"sanches","sintoma":"fiebre","sintomatwo":"Nauseas"},
+    {"name":"lucas","lastName":"gonzalez","sintoma":"fiebre","sintomatwo":"Dolor de cabeza"},
+    {"name":"tomas","lastName":"garcia","sintoma":"fiebre","sintomatwo":"Nauseas"},
+    {"name":"lautaro","lastName":"perez","sintoma":"fiebre","sintomatwo":"Dolor de cabeza"},
+    {"name":"ariel","lastName":"fernandez", "sintoma":"fiebre","sintomatwo":"Dolor de cabeza"},
+    {"name":"nicolas","lastName":"sanches","sintoma":"fiebre","sintomatwo":"Dolor de cabeza"},
+    {"name":"lucas","lastName":"gonzalez","sintoma":"fiebre","sintomatwo":"Nauseas"},
+    {"name":"tomas","lastName":"garcia","sintoma":"fiebre","sintomatwo":"fiebre"},
+    {"name":"lautaro","lastName":"perez","sintoma":"fiebre","sintomatwo":"Dolor de cabeza"},
+    {"name":"ariel","lastName":"fernandez", "sintoma":"fiebre","sintomatwo":"Dolor de cabeza"},
+    {"name":"nicolas","lastName":"sanches","sintoma":"fiebre","sintomatwo":"Nauseas"},
+    {"name":"lucas","lastName":"gonzalez","sintoma":"fiebre","sintomatwo":"Dolor de cabeza"},
+    {"name":"tomas","lastName":"garcia","sintoma":"fiebre","sintomatwo":"Nauseas"},
+    {"name":"lautaro","lastName":"perez","sintoma":"fiebre","sintomatwo":"Nauseas"},
+    {"name":"ariel","lastName":"fernandez", "sintoma":"fiebre","sintomatwo":"fiebre"}
+
+]
+
+    
