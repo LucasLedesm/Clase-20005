@@ -1,6 +1,7 @@
 
 $("#pagar").click(function(event) {
     pagar()
+    $("#myBtnHisopado").show();
  })
 
 const carrito = [
@@ -16,6 +17,7 @@ async function pagar() {
         quantity: Number(element.cantidad),
         currency_id: "ARS",
         unit_price: Number(element.precio),
+        
       };
       return nuevoElemento;
     });
@@ -32,16 +34,9 @@ async function pagar() {
           items: productsToMP,
         }),
       }
-    ).then(response=> {
-      if(response.status == 201 || response.status == 200 ){
-       
-         $("#myBtnHisopado").show();
-      }
-    })
-
-
-    console.warn(response)
-    const data = await response.json();
-    console.log(data)
-    window.open(data.init_point, "_blank");
-  }
+      )
+      console.warn(response)
+      const data = await response.json();
+      console.log(data)
+      window.open(data.init_point, "_blank");
+    }
